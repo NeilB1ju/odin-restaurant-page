@@ -19,6 +19,7 @@ export default function createTabs () {
     buttons.appendChild(homeButton);
     buttons.appendChild(menuButton);
     buttons.appendChild(contactButton);
+    buttons.classList.add(".tabs");
 
     homeButton.addEventListener('click', () =>{
         clearContent();
@@ -39,8 +40,5 @@ export default function createTabs () {
 
 function clearContent (){
     const main = document.querySelector("#content");
-    const pageContent = document.querySelector(".pageContent");
-    if(pageContent){
-        main.removeChild(pageContent);
-    }
+    main.childNodes[1].remove(); 
 }

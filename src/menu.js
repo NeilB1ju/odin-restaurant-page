@@ -7,7 +7,7 @@ export default function createMenuPage() {
     title.textContent = "This is the Menu";
 
     const menuItem = document.createElement('p')
-    menuItem.textContent("Shawarma");
+    menuItem.textContent = "Shawarma";
 
     const descText = document.createElement('p');
     descText.textContent = "This is an amazing menu";
@@ -16,5 +16,4 @@ export default function createMenuPage() {
     pageContent.appendChild(title);
     pageContent.appendChild(menuItem);
     pageContent.appendChild(descText);
-    console.log("Test");
 }
